@@ -3,6 +3,10 @@ html {
     color: #e6e6e6;
 }
 
+h1 {
+    text-decoration: underline #e6e6e6;
+}
+
 div.container {
     background-color: rgba(255, 255, 255, 0.05);
     width: fit-content;
@@ -15,4 +19,5 @@ div.container {
 
 h2#head2-change-1 {
     font-size: 40px;
+    color: red;
 }
