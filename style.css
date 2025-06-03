@@ -43,3 +43,29 @@ h2#head2-change-1 {
 .container2 p {
     font-weight: bold;
 }
+
+/* colour definition variations */
+
+.RGB {
+    color: rgb(120, 61, 233);
+}
+
+.HEX {
+    color: #3aefeb;
+}
+
+.HSL {
+    color: hsl(140, 39%, 71%);
+}
+
+.RGBA {
+    color: rgba(244, 61, 104, 0.57);
+}
+
+.HSLA {
+    color: hsla(199, 74%, 60%, 0.97);
+}
+
+.colour-name {
+    color: magenta;
+}
