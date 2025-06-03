@@ -9,24 +9,81 @@
 <body>
     <h1>CSS Examples</h1>
     <div class="container">
-        <h2>First Example</h2>
+        <h2>Example 1</h2>
         <p>
-            The default background colour and text colour has been changed within the CSS for the html tag,
+            The default background colour and text colour has been changed within the CSS for the html element,
             creating a dark-mode style appearance.
         </p>
     </div>
+    <br>
     <div class="container">
-        <h2>Second Example</h2>
+        <h2>Example 2</h2>
         <p>
-            I have created CSS for a div with the class "container" to create a slightly lighter box than the main background colour which visually separates each CSS example. They fit the sizze of the contents, with a width up to a maximum of 50% of the window width. They also have a rounnded border and a dropshadow to make them stand out more on the background of the page.
+            I have created CSS for a div with the class "container" to create a slightly lighter box than the main
+            background colour which visually separates each CSS example. They fit the sizze of the contents, with a
+            width up to a maximum of 50% of the window width. They also have a rounnded border and a dropshadow to make
+            them stand out more on the background of the page.
         </p>
     </div>
+    <br>
     <div class="container">
-        <h2 id="head2-change-1">Third Example</h2>
-        <h2>[Original h2 size]</h2>
+        <h2 id="head2-change-1">Example 3</h2>
         <p>
-            I have made a change to the CSS for the above headding ("Third Example") to make it larger than a normal
-            instance of the h2 tag (provided for reference).
+            I have made a change to the CSS for the above heading ("Example 3") which is given the id "head2-change-1"
+            to make specifically this instance larger than a normal instance of the h2 element (see titles for above
+            examples for reference of original size). I have also made the title a different colour to the default, to
+            show that the override only changes the one h2 instance.
+        </p>
+    </div>
+    <br>
+    <div class="container2">
+        <h2>Example 4</h2>
+        <p>
+            This example shows a separate div using the class "container2" which is the same as others except it is
+            instead slightly darker than the background instead of lighter, the header colour is changed to aqua (as
+            will all headers within a "container2" div) and all text within p elements within a "container2" div are
+            automatically made bold.
+        </p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Example 5</h2>
+        <p>
+            This example shows that colours can be defined in multiple ways, as in the CSS the names for each will be
+            different colours and use the respective methods. The methods are <span class="RGB">Red/Green/Blue</span>,
+            <span class="HEX">hex code</span>, <span class="HSL">Hue/Saturation/Lightness</span>, <span
+                class="RGBA">Red/Green/Blue/Alpha</span>, <span class="HSLA">Hue/Saturation/Lightness/Alpha</span>, and
+            <span class="colour-name">colour name</span>. Colour can be applied to text, the background, to a border, 
+            or to many other things for different effects.
+        </p>
+        <br>
+        <p>
+            - <span class="RGB">Red/Green/Blue</span> (or RGB) works by providing a value from 0 to 255 for the channels
+            of red green and blue, which is how light combines into various colours as those are the primary colours of
+            light (or "additive colour mixing"). This is also used by <span class="RGBA">Red/Green/Blue/Alpha</span> (or
+            RGBA) but the added channel "Alpha" is used for transparency, with a value from 0.0 (completely transparent)
+            to 1.0 (fully opaque).
+        </p>
+        <p>
+            - <span class="HEX">Hex code</span> is one of the most used ways to describe colour for computers. It is
+            seen as a # symbol followed by 6 "digits" of haxadecimal (numbers form 0-9 and letters from a-f to represent
+            numbers from 10-15, with 10 in hexadecimal being the same as 16 in decimal). Each group of 2 digits is used
+            for the same channels as RGB in order. So since the colour being used to represent hex codes in this example
+            is #3aefeb it is equivalent to an RGB value of [58,239,235] which makes it the light blue/green colour that
+            you see. Hex codes are also able to use the alpha channel by adding another 2 digits to the code, with
+            higher values being more opaque and lower values being more transparent.
+        </p>
+        <p>
+            - <span class="HSL">Hue/Saturation/Lightness</span> (HSL) and <span
+                class="HSLA">Hue/Saturation/Lightness/Alpha</span> (HSLA) are in contrast less widely used. The value
+            for Hue goes through each colour ranging from 0 to 359 (0 is the same as 360, being red, and all other
+            values are a different part of the light spectrum), and the Saturation and Lightness values range from 0% to
+            100%. HSLA is like RGBA in which it also adds in the Alpha channel, with the same value range.
+        </p>
+        <p>
+            - The web also has 140 <span class="colour-name">colour names</span> that are supported by all browsers,
+            which are symbols pointing to predefined hex code values. The colour used to represent colour names for this
+            example is magenta, which means it is the equivalent of #ff00ff.
         </p>
     </div>
 </body>

@@ -1,12 +1,30 @@
+/* Default styling */
 html {
     background-color: #181818;
     color: #e6e6e6;
+}
+
+/* Misc styling */
+h1 {
+    text-decoration: underline #e6e6e6;
 }
 
 div.container {
     background-color: rgba(255, 255, 255, 0.05);
     width: fit-content;
     max-width: 50%;
+    min-width: 25%;
+    padding: 0.5rem 3rem;
+    margin: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+div.container2 {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: fit-content;
+    max-width: 50%;
+    min-width: 25%;
     padding: 0.5rem 3rem;
     margin: 1rem 3rem;
     border-radius: 1rem;
@@ -15,4 +33,39 @@ div.container {
 
 h2#head2-change-1 {
     font-size: 40px;
+    color: red;
+}
+
+.container2 h2 {
+    color: aqua;
+}
+
+.container2 p {
+    font-weight: bold;
+}
+
+/* colour definition variations */
+
+.RGB {
+    color: rgb(120, 61, 233);
+}
+
+.HEX {
+    color: #3aefeb;
+}
+
+.HSL {
+    color: hsl(140, 39%, 71%);
+}
+
+.RGBA {
+    color: rgba(244, 61, 104, 0.57);
+}
+
+.HSLA {
+    color: hsla(199, 74%, 60%, 0.97);
+}
+
+.colour-name {
+    color: magenta;
 }
