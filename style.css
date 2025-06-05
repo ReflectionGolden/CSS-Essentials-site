@@ -37,6 +37,10 @@ div.container4 {
     border: medium dashed cyan;
 }
 
+div.auto-margin {
+    margin: 1rem auto;
+}
+
 /* Misc styling */
 h1 {
     text-decoration: underline #e6e6e6;
