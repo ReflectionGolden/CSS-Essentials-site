@@ -38,7 +38,11 @@ div.container4 {
 }
 
 div.auto-margin {
-    margin: 1rem auto;
+    margin: 3rem auto;
+}
+
+div.big-padding {
+    padding: 40px 100px;
 }
 
 /* Misc styling */
