@@ -9,7 +9,7 @@
 <body>
     <h1>CSS Examples</h1>
     <div class="container">
-        <h2>Example 1</h2>
+        <h2>Example 1: background and text colour</h2>
         <p>
             The default background colour and text colour has been changed within the CSS for the html element,
             creating a dark-mode style appearance.
@@ -17,7 +17,7 @@
     </div>
     <br>
     <div class="container">
-        <h2>Example 2</h2>
+        <h2>Example 2: containers for examples</h2>
         <p>
             I have created CSS for a div with the class "container" to create a slightly lighter box than the main
             background colour which visually separates each CSS example. They fit the size of the contents, with a
@@ -29,7 +29,7 @@
     </div>
     <br>
     <div class="container">
-        <h2 id="head2-change-1">Example 3</h2>
+        <h2 id="head2-change-1">Example 3: id changed element (heading)</h2>
         <p>
             I have made a change to the CSS for the above heading ("Example 3") which is given the id "head2-change-1"
             to make specifically this instance larger than a normal instance of the h2 element (see titles for above
@@ -39,7 +39,7 @@
     </div>
     <br>
     <div class="container2">
-        <h2>Example 4</h2>
+        <h2>Example 4: alternate container using a different class</h2>
         <p>
             This example shows a separate div using the class "container2" which is the same as others except it is
             instead slightly darker than the background instead of lighter, the header colour is changed to aqua (as
@@ -49,7 +49,7 @@
     </div>
     <br>
     <div class="container">
-        <h2>Example 5</h2>
+        <h2>Example 5: different ways to define colours</h2>
         <p>
             This example shows that colours can be defined in multiple ways, as in the CSS the names for each will be
             different colours and use the respective methods. The methods are <span class="RGB">Red/Green/Blue</span>,
@@ -89,7 +89,7 @@
         </p>
     </div>
     <div class="container3">
-        <h2>Example 6</h2>
+        <h2>Example 6: background images</h2>
         <p>
             This example shows that it is also possible to use an image for a background in a container instead of just
             a colour.
@@ -114,7 +114,7 @@
         </p>
     </div>
     <div class="container4">
-        <h2>Example 7</h2>
+        <h2>Example 7: element borders</h2>
         <p>
             Borders can be given to elements, and can be styled in many ways. The other examples don't have a border,
             while this one shoes the border styled as dashed while being cyan in colour. All examples also have a border
@@ -131,15 +131,18 @@
         </p>
     </div>
     <div class="container auto-margin">
-        <h2>Example 8</h2>
+        <h2>Example 8: margins</h2>
         <p>
             Margins change the position of the element they are applied to. This example shows the margin changed so
             that the left and right margins have the value auto, which causes the container to be rendered in the center
             of the page. It also has a larger gap between it and the other examples.
+            <br><br>
+            This example is done by making use of assignment of multiple classes, using the base "container" class and
+            an extra "auto-margin" class.
         </p>
     </div>
     <div class="container big-padding">
-        <h2>Example 9</h2>
+        <h2>Example 9: padding</h2>
         <p>
             Padding is used for setting the distance between the edge of the container and the content. This example
             shows a larger padding than the rest of the examples.
@@ -147,6 +150,16 @@
             It is possible to apply padding to only specific sides, although I am using the shorthand to apply 40px of
             padding to the top and bottom, while applying 100px padding to the left and right. This makes the container
             for this example wider than the others.
+        </p>
+    </div>
+    <div class="container more-size">
+        <h2>Example 10: differing height and width</h2>
+        <p>
+            This example shows that the height and width of an element can be altered, as the container uses the existing base "container" class and one which sets a specific height, causing it to be larger than it would be if it was set to fit its contents.
+            <br>
+            However, when viewed with a window that has a thin enough width, the text will instead overflow the container.
+            <br><br>
+            The max width has also been changed to go up to a maximum of 75% of the window's width, which causes it to be longer than other examples due to still being set to fit the content.
         </p>
     </div>
 </body>
