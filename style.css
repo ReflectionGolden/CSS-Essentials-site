@@ -68,6 +68,27 @@ h2#head2-change-1 {
     font-weight: bold;
 }
 
+p.all-text {
+    color: magenta;
+    text-align: right;
+    text-decoration: underline wavy cyan 1px;
+    text-indent: 4rem;
+    letter-spacing: 3px;
+}
+
+p.capital {
+    text-transform: capitalize;
+}
+
+p.high-line {
+    line-height: 2rem;
+}
+
+p.right-to-left {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
 /* colour definition variations */
 
 .RGB {
