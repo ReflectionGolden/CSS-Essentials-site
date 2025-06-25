@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ComicRelief-Regular;
+    src: url(ComicRelief-Regular.ttf);
+}
+
 /* Default styling */
 html {
     background-color: #181818;
@@ -87,6 +92,20 @@ p.high-line {
 p.right-to-left {
     direction: rtl;
     unicode-bidi: bidi-override;
+}
+
+/* Fonts */
+
+h2.head-font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.para-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.para-font-2 {
+    font-family: ComicRelief-Regular, sans-serif;
 }
 
 /* colour definition variations */
