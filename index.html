@@ -4,6 +4,9 @@
 <head>
     <title>CSS Essentials</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -155,44 +158,89 @@
     <div class="container more-size">
         <h2>Example 10: differing height and width</h2>
         <p>
-            This example shows that the height and width of an element can be altered, as the container uses the existing base "container" class and one which sets a specific height, causing it to be larger than it would be if it was set to fit its contents.
+            This example shows that the height and width of an element can be altered, as the container uses the
+            existing base "container" class and one which sets a specific height, causing it to be larger than it would
+            be if it was set to fit its contents.
             <br>
-            However, when viewed with a window that has a thin enough width, the text will instead overflow the container.
+            However, when viewed with a window that has a thin enough width, the text will instead overflow the
+            container.
             <br><br>
-            The max width has also been changed to go up to a maximum of 75% of the window's width, which causes it to be longer than other examples due to still being set to fit the content.
+            The max width has also been changed to go up to a maximum of 75% of the window's width, which causes it to
+            be longer than other examples due to still being set to fit the content.
         </p>
     </div>
     <div class="container">
         <h2>Example 11: Text</h2>
         <p class="all-text">
-            The text within this example is set to show many different ways to alter text. This includes, but is not limited to, the text's colour (represented here by being magenta), the text align property causing it to be aligned to the right instead of the left, a wavy underline in cyan for text decoration (which can be done either through a single property or deparate properties that do individual parts of the combined one), a text indent which causes the first line to be indented (despite being aligned right, it indents from the left), and an increased letter spacing which causes each letter to be further apart from others around them.
+            The text within this example is set to show many different ways to alter text. This includes, but is not
+            limited to, the text's colour (represented here by being magenta), the text align property causing it to be
+            aligned to the right instead of the left, a wavy underline in cyan for text decoration (which can be done
+            either through a single property or deparate properties that do individual parts of the combined one), a
+            text indent which causes the first line to be indented (despite being aligned right, it indents from the
+            left), and an increased letter spacing which causes each letter to be further apart from others around them.
         </p>
         <p class="high-line">
-            This text has been given an increased line height, which is difficult to see without a good amount of text, so it will be followed by some Lorem ipsum text.
+            This text has been given an increased line height, which is difficult to see without a good amount of text,
+            so it will be followed by some Lorem ipsum text.
             <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id accumsan enim, ut auctor massa. Curabitur ac porttitor nisi. Morbi venenatis, justo ut dictum lacinia, enim ex fermentum tortor, vitae dignissim nulla magna ut dolor. Suspendisse potenti. Aenean congue lorem nec lectus maximus venenatis. Donec id risus vel tellus auctor gravida. Donec tempor elit eget nisi faucibus, in faucibus orci convallis. Aenean malesuada neque erat, sit amet convallis urna consectetur vel. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id accumsan enim, ut auctor massa. Curabitur
+            ac porttitor nisi. Morbi venenatis, justo ut dictum lacinia, enim ex fermentum tortor, vitae dignissim nulla
+            magna ut dolor. Suspendisse potenti. Aenean congue lorem nec lectus maximus venenatis. Donec id risus vel
+            tellus auctor gravida. Donec tempor elit eget nisi faucibus, in faucibus orci convallis. Aenean malesuada
+            neque erat, sit amet convallis urna consectetur vel.
         </p>
         <p class="capital">
-            This text was written to be normal, but has been given the "text-transform" property with the value "capitalize" which causes each word to be capitalised. It also has options for forcing the text to be all lowercase, all uppercase, or none in case it is inheriting a transformation from a parent and you don't want it to.
+            This text was written to be normal, but has been given the "text-transform" property with the value
+            "capitalize" which causes each word to be capitalised. It also has options for forcing the text to be all
+            lowercase, all uppercase, or none in case it is inheriting a transformation from a parent and you don't want
+            it to.
         </p>
         <p class="right-to-left">
-            This text is given the direction of right to left, and is given the "unicode-bidi" property with the "bidi-override" value in order to cause the text to be mirrored (but not the letters themselves). If you can read this properly, then you either have a mirror or are good at reversing things in your head.
+            This text is given the direction of right to left, and is given the "unicode-bidi" property with the
+            "bidi-override" value in order to cause the text to be mirrored (but not the letters themselves). If you can
+            read this properly, then you either have a mirror or are good at reversing things in your head.
         </p>
         <p>
-            Other properties that can be used are: word spacing (increasing or reducing the space between words), white space (which can specify how whitespace is handled in various ways), text shadow (to add a shadow to the text), and more.
+            Other properties that can be used are: word spacing (increasing or reducing the space between words), white
+            space (which can specify how whitespace is handled in various ways), text shadow (to add a shadow to the
+            text), and more.
         </p>
     </div>
     <div class="container">
         <h2 class="head-font">Example 12: fonts</h2>
         <p class="para-font">
-            Using the font-family property, it is possible to change the font that text is rendered with, as seen by how the fonts in this example are different to the fonts in other examples, most notably the lack of serifs for this example. The heading is also a different font from the paragraph.
+            Using the font-family property, it is possible to change the font that text is rendered with, as seen by how
+            the fonts in this example are different to the fonts in other examples, most notably the lack of serifs for
+            this example. The heading is also a different font from the paragraph.
             <br>
-            It is also possible to use font-style to make an entire element's text show in italics, and font-weight to change how thick or thin the lettering is for the text.
+            It is also possible to use font-style to make an entire element's text show in italics, and font-weight to
+            change how thick or thin the lettering is for the text.
         </p>
         <p class="para-font-2">
-            The above text makes use of fonts that can come pre-installed with a web browser, but this text instead uses a font that has been downloaded and provided within the website's files named "ComicRelief-Regular". If the browser this is being viewed in is not compatible with .ttf files for fonts, you will instead see the "sans-serif" font that comes pre-installed on browsers.
+            The above text makes use of fonts that can come pre-installed with a web browser, but this text instead uses
+            a font that has been downloaded and provided within the website's files named "ComicRelief-Regular". If the
+            browser this is being viewed in is not compatible with .ttf files for fonts, you will instead see the
+            "sans-serif" font that comes pre-installed on browsers.
             <br>
-            It is also possible for outside fonts to be added through a ling to the repository holding it, so that it doesn't have to be downloaded to the website's files directly.
+            It is also possible for outside fonts to be added through a ling to the repository holding it, so that it
+            doesn't have to be downloaded to the website's files directly.
+        </p>
+    </div>
+    <div class="container">
+        <h2>Example 13: Icons</h2>
+        <p>
+            There are a number of ways that icons can be implemented. One way is through the use of Font Awesome Icons, which are able to show icons like a house for a home button (<i class="fa-solid fa-house"></i>), a thumbs up for a like button (<i class="fa-solid fa-thumbs-up"></i>), and many many more such as logos for various companies or social medias that may be linked to by a website.
+            <br>
+            Other options are using Google Icons, which has many icons for making various buttons, and Bootstrap Icons which similarly to the other 2 options has many icons for various purposes.
+            <br>
+            Font Awesome is also able to apply animations to icons, so it is possible to have a red beating heart as shown here: <i class="fa-solid fa-heart fa-beat" style="color: #d50000;"></i>
+            <br>
+            It also has a number of icons that require the use of a paid plan, and within the list of icons those are given a "pro" label.
+        </p>
+        <p>
+            As icons are added within text, they can be manipulated in the same way that text can (such as altering the size, colour, and using them for the "text" of an a element for a link).
+            <br>
+            Each of these ways to use icons use SVG files (or "Scalable Vector Graphics" files) which means they don't lose their resolution or definition when increased in size.
         </p>
     </div>
 </body>
