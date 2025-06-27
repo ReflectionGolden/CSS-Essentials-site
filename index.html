@@ -229,30 +229,157 @@
     <div class="container">
         <h2>Example 13: Icons</h2>
         <p>
-            There are a number of ways that icons can be implemented. One way is through the use of Font Awesome Icons, which are able to show icons like a house for a home button (<i class="fa-solid fa-house"></i>), a thumbs up for a like button (<i class="fa-solid fa-thumbs-up"></i>), and many many more such as logos for various companies or social medias that may be linked to by a website.
+            There are a number of ways that icons can be implemented. One way is through the use of Font Awesome Icons,
+            which are able to show icons like a house for a home button (<i class="fa-solid fa-house"></i>), a thumbs up
+            for a like button (<i class="fa-solid fa-thumbs-up"></i>), and many many more such as logos for various
+            companies or social medias that may be linked to by a website.
             <br>
-            Other options are using Google Icons, which has many icons for making various buttons, and Bootstrap Icons which similarly to the other 2 options has many icons for various purposes.
+            Other options are using Google Icons, which has many icons for making various buttons, and Bootstrap Icons
+            which similarly to the other 2 options has many icons for various purposes.
             <br>
-            Font Awesome is also able to apply animations to icons, so it is possible to have a red beating heart as shown here: <i class="fa-solid fa-heart fa-beat" style="color: #d50000;"></i>
+            Font Awesome is also able to apply animations to icons, so it is possible to have a red beating heart as
+            shown here: <i class="fa-solid fa-heart fa-beat" style="color: #d50000;"></i>
             <br>
-            It also has a number of icons that require the use of a paid plan, and within the list of icons those are given a "pro" label.
+            It also has a number of icons that require the use of a paid plan, and within the list of icons those are
+            given a "pro" label.
         </p>
         <p>
-            As icons are added within text, they can be manipulated in the same way that text can (such as altering the size, colour, and using them for the "text" of an a element for a link).
+            As icons are added within text, they can be manipulated in the same way that text can (such as altering the
+            size, colour, and using them for the "text" of an a element for a link).
             <br>
-            Each of these ways to use icons use SVG files (or "Scalable Vector Graphics" files) which means they don't lose their resolution or definition when increased in size.
+            Each of these ways to use icons use SVG files (or "Scalable Vector Graphics" files) which means they don't
+            lose their resolution or definition when increased in size.
         </p>
     </div>
     <div class="container">
         <h2>Example 14: Links</h2>
         <p>
-            Links (using the "a" tag) are easily made to look different from how they normally do via using text related properties.
+            Links (using the "a" tag) are easily made to look different from how they normally do via using text related
+            properties.
             <br>
-            For an example, <a href="https://bing.com" target="_blank">here is a link</a> (which opens a new tab in Bing, so that it shows as unvisited) that uses the default style for a link. In comparison, <a href="https://bing.com" target="_blank" class="custom-link">This link</a> goes to the same place, but has been changed so that it is a dark aqua colour, doesn't have an underline, has a different font to the surrounding text, and is bold. It is also possible to make a link change when it is different states (normal otherwise known as "link", visited, hovered, and active), which you can see if you do each with the second link.
+            For an example, <a href="https://bing.com" target="_blank">here is a link</a> (which opens a new tab in
+            Bing, so that it shows as unvisited) that uses the default style for a link. In comparison, <a
+                href="https://bing.com" target="_blank" class="custom-link">This link</a> goes to the same place, but
+            has been changed so that it is a dark aqua colour, doesn't have an underline, has a different font to the
+            surrounding text, and is bold. It is also possible to make a link change when it is different states (normal
+            otherwise known as "link", visited, hovered, and active), which you can see if you do each with the second
+            link.
             <br><br>
-            When the second link is hovered over, it will become lighter and get an underline the colour of the normal text while seeming to lift off the page due to getting a text shadow with a short transition to the new state. Also, while "active" (which means in the process of being clicked on) the link returns to the darker colour and the shadow recedes to suggest it is being clicked and held down but the bottom border stays. Finally, once the link has been visited it will turn a dark red when not hovered over or activated.
+            When the second link is hovered over, it will become lighter and get an underline the colour of the normal
+            text while seeming to lift off the page due to getting a text shadow with a short transition to the new
+            state. Also, while "active" (which means in the process of being clicked on) the link returns to the darker
+            colour and the shadow recedes to suggest it is being clicked and held down but the bottom border stays.
+            Finally, once the link has been visited it will turn a dark red when not hovered over or activated.
             <br><br>
-            In the CSS, the styles need to be done in order of "link, visited, hover, active" but they aren't all needed at once if you only want to change a the hover and active states, for example.
+            In the CSS, the styles need to be done in order of "link, visited, hover, active" but they aren't all needed
+            at once if you only want to change a the hover and active states, for example.
+        </p>
+    </div>
+    <div class="container">
+        <h2>Example 15: Lists</h2>
+        <p>
+            There are various types of lists available for use in a web page, and CSS can style them in various ways.
+            Here we have an "Ordered List", marked to show an order:
+        </p>
+        <ol class="roman-list">
+            <li>
+                This list has been styled so that it is marked with roman numerals, as opposed to the default numbers.
+            </li>
+            <li>
+                This means that you will see that before each part of the list.
+            </li>
+            <li>
+                this creates the appearacne of a specific order required, and can be used for things like steps for
+                doing something.
+            </li>
+            <li>
+                The use of roman numerals can work well for a website with that sort of theme, although it is better to
+                make use of arabic numbers (1, 5, 10, etc.) as they are more intuitive for most people.
+            </li>
+        </ol>
+        <p>
+            The list of options for different ordered list styles are as follows, in alphabetical order of name:
+        </p>
+        <ol class="ordered-types-list">
+            <li>
+                "armenian", which uses traditional Armenian numbering.
+            </li>
+            <li>
+                "decimal", which is a decimal number and the default for an ordered list.
+            </li>
+            <li>
+                "decimal-leading-zero", a decimal number with a leading zeros, such as 01, 02, 03, etc.
+            </li>
+            <li>
+                "georgian", which uses traditional Georgian numbering.
+            </li>
+            <li>
+                "lower-alpha", lower case use of english letters.
+            </li>
+            <li>
+                "lower-greek", lower case use of greek letters, such as α, β, γ, δ, etc.
+            </li>
+            <li>
+                "lower-latin", which displays the same as lower-alpha.
+            </li>
+            <li>
+                "lower-roman", which uses roman numerals with the letters used in lower case (such as i, ii, iii, iv).
+            </li>
+            <li>
+                "upper-alpha", upper case use of english letters.
+            </li>
+            <li>
+                "upper-greek", upper case use of greek letters, such as Α, Β, Γ, Δ, etc.
+            </li>
+            <li>
+                "upper-latin", which displays the same as upper-alpha.
+            </li>
+            <li>
+                "upper-roman", which uses roman numerals with the letters used in upper case (such as I, II, III, IV).
+            </li>
+        </ol>
+        <p>
+            And here, we have an "unordered list", marked without showing a specific order:
+        </p>
+        <ul class="circle-list">
+            <li>
+                This list has been styled so that it is marked with circles that aren't filled in, as opposed to the
+                default bullet points.
+            </li>
+            <li>
+                This means that the list shows differently to normal.
+            </li>
+            <li>
+                as an unordered list, it is just a general list of things with no specific order, so it can be used for
+                lists of related pieces of information that don't need to go in any specific order.
+            </li>
+        </ul>
+        <p>
+            The following is a list of some options for using with an unordered list:
+        </p>
+        <ul>
+            <li>
+                "circle", which shows a circle that isn't filled in.
+            </li>
+            <li>
+                "disc", the default filed in bullet point.
+            </li>
+            <li>
+                "square", a filled in square bullet point.
+            </li>
+        </ul>
+        <p>
+            It is possible to use options intended for ordered lists with unordered lists and vice versa, although it is
+            better to keep them for the specific type of list they are for.
+            <br><br>
+            There are also a few extra list styles, as there is "none" which removes markers before each item, and also
+            a way to use images instead for a custom marker in the case of a website with a very specific theme.
+            <br><br>
+            Lists are most used for containing the navigation at the top of the page, showing the links for each page so
+            that the user can go between them. This site does not have muultiple pages, so there isn't an example here,
+            but you can see it used by looking at the navigation for my <a
+                href="https://github.com/ReflectionGolden/ITOL-practical-site-one" target="_blank"
+                class="useful-link"><i class="fa-brands fa-github"></i>ITOL-practical-site-one</a> on GitHub.
         </p>
     </div>
 </body>

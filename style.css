@@ -117,6 +117,22 @@ a.custom-link:active {
     text-shadow: none;
 }
 
+a.useful-link:link {
+    color: #3aefeb;
+}
+
+a.useful-link:visited {
+    color: #139290;
+}
+
+ol.roman-list {
+    list-style-type: upper-roman;
+}
+
+ul.circle-list {
+    list-style-type: circle;
+}
+
 /* Fonts */
 
 h2.head-font {
