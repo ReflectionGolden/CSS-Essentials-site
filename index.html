@@ -243,6 +243,18 @@
             Each of these ways to use icons use SVG files (or "Scalable Vector Graphics" files) which means they don't lose their resolution or definition when increased in size.
         </p>
     </div>
+    <div class="container">
+        <h2>Example 14: Links</h2>
+        <p>
+            Links (using the "a" tag) are easily made to look different from how they normally do via using text related properties.
+            <br>
+            For an example, <a href="https://bing.com" target="_blank">here is a link</a> (which opens a new tab in Bing, so that it shows as unvisited) that uses the default style for a link. In comparison, <a href="https://bing.com" target="_blank" class="custom-link">This link</a> goes to the same place, but has been changed so that it is a dark aqua colour, doesn't have an underline, has a different font to the surrounding text, and is bold. It is also possible to make a link change when it is different states (normal otherwise known as "link", visited, hovered, and active), which you can see if you do each with the second link.
+            <br><br>
+            When the second link is hovered over, it will become lighter and get an underline the colour of the normal text while seeming to lift off the page due to getting a text shadow with a short transition to the new state. Also, while "active" (which means in the process of being clicked on) the link returns to the darker colour and the shadow recedes to suggest it is being clicked and held down but the bottom border stays. Finally, once the link has been visited it will turn a dark red when not hovered over or activated.
+            <br><br>
+            In the CSS, the styles need to be done in order of "link, visited, hover, active" but they aren't all needed at once if you only want to change a the hover and active states, for example.
+        </p>
+    </div>
 </body>
 
 </html>

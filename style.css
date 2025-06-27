@@ -94,6 +94,29 @@ p.right-to-left {
     unicode-bidi: bidi-override;
 }
 
+a.custom-link:link {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #139290;
+}
+
+a.custom-link:visited {
+    color: rgb(187, 20, 14);
+}
+
+a.custom-link:hover {
+    color: aqua;
+    border-bottom: 2px solid #e6e6e6;
+    text-shadow: 0.2rem 0.2rem black;
+}
+
+a.custom-link:active {
+    color: #139290;
+    text-shadow: none;
+}
+
 /* Fonts */
 
 h2.head-font {
