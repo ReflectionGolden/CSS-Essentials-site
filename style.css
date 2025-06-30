@@ -55,6 +55,13 @@ div.more-size {
     max-width: 75%;
 }
 
+div.full-wide {
+    width: 95%;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: none;
+}
+
 /* Misc styling */
 h1 {
     text-decoration: underline #e6e6e6;
@@ -171,4 +178,51 @@ p.para-font-2 {
 
 .colour-name {
     color: magenta;
+}
+
+/* Positioning styles */
+
+div.position-container {
+    border: 5px solid #000;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+div#static-box {
+    width: fit-content;
+    background-color: red;
+    position: static;
+}
+
+div#relative-box {
+    width: fit-content;
+    background-color: blue;
+    position: relative;
+    left: 30px;
+}
+
+div.fixed-box {
+    background-color: rgba(0, 128, 0, 0.1);
+    min-width: none;
+    max-width: none;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+
+div#absolute-box {
+    width: fit-content;
+    background-color: yellow;
+    color: #000;
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+}
+
+div.sticky-box {
+    background-color: rgba(255, 0, 255, 0.5);
+    min-width: none;
+    max-width: none;
+    position: sticky;
+    top: 0;
 }
