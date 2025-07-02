@@ -226,3 +226,84 @@ div.sticky-box {
     position: sticky;
     top: 0;
 }
+
+div#picture1 {
+    background-image: url(images/Sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    text-shadow: 2px 2px #181818e6;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    z-index: 1;
+}
+
+div#picture2 {
+    background-image: url(images/Sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    text-shadow: 2px 2px #181818e6;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+div#circlered {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    z-index: 4;
+    border: 1px solid #000;
+}
+
+div#circleblue {
+    background-color: rgba(0, 0, 255, 0.3);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 154px;
+    right: 269px;
+    z-index: 3;
+    border: 1px solid #000;
+}
+
+div#circlegreen {
+    background-color: rgba(0, 255, 0, 0.3);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 154px;
+    right: 331px;
+    z-index: 2;
+    border: 1px solid #000;
+}
+
+div#backgroundwhite {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 84px;
+    right: 250px;
+    z-index: 1;
+}

@@ -432,7 +432,6 @@
             </li>
         </ul>
         <div class="position-container" style="position: relative;">
-            <!-- The different objects. -->
             <div class="container sticky-box">
                 <h2>Example 16.2: Sticky Position</h2>
                 <p>position: sticky</p>
@@ -450,6 +449,30 @@
             <div id="absolute-box">
                 <p>position: absolute</p>
             </div>
+        </div>
+    </div>
+    <div class="container full-wide">
+        <h2>Example 17: Z-index</h2>
+        <p>
+            The z-index property is able to change in what order positioned elements are shown separately from the order they are in the HTML. As an example, the images below were added with "image 1" first and "image 2" second, but the first is shown above the second dues to being given a Z-index of 1.
+            <br><br>
+            It is possible for the z-index to go all the way up to 1000 and down to -1000, for a total of 2001 z-index layers (including the default of 0). This can be made use of if there are many elements that you want to position in various ways.
+            <br>
+            Also in the example area, is a venn diagram with 3 circles, each with a thin black border and a transparent background of Red, Green, or Blue while on a background of white. The order they were written in the HTML is the red circle, then the blue, then the green, then the white background. However, the z-index property has been used to show them all in the opposite order, with the white background first, then the green, blue, then red circles.
+        </p>
+        <div class="position-container" style="position: relative;">
+            <!-- The different objects. -->
+            <div id="picture1">
+               <p>image 1</p>
+            </div>
+            <div id="picture2">
+               <p>image 2</p>
+            </div>
+            <!-- Diagram Circles -->
+            <div id="circlered"></div>
+            <div id="circleblue"></div>
+            <div id="circlegreen"></div>
+            <div id="backgroundwhite"></div>
         </div>
     </div>
     <div style="height: 1000px;"></div>
