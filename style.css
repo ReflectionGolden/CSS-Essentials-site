@@ -62,6 +62,11 @@ div.full-wide {
     max-width: none;
 }
 
+div.fixed-height-scroll {
+    height: 191.833px;
+    overflow: scroll;
+}
+
 /* Misc styling */
 h1 {
     text-decoration: underline #e6e6e6;

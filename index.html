@@ -531,6 +531,29 @@
             container wouldn't appear too small.
         </p>
     </div>
+    <div class="container fixed-height-scroll">
+        <h2>Example 20: Overflow</h2>
+        <p>
+            The overflow property dictates how an element reacts when the text would get to the end of the available
+            space. It is by default set to "visible", which makes sure the text is visible mostly by increasing the
+            height of the element containing the text, unless a specific height is given at which point the text
+            overflows down the bottom of the element.
+            <br><br>
+            Another option is the value "hidden", which if a specific height is provided and the text overflows from the
+            container, any of the text past the size of the container won't be visible.
+            <br><br>
+            The third value, which is being used by this container, is "scroll" which does the same as hidden but adds a
+            scrollbar so that the rest of the content can be seen. There is also "auto", which does the same thing but
+            only adds the scrollbar if it is necessary in order to actually see the overflowed text. These can be used
+            for responsive text boxes if you want to keep them at a certain height (such as a percentage of the window
+            height) on smaller screens to allow the user a better visual experience, but if the text would cause it to
+            be too tall.
+            <br><br>
+            It is also possible to set different overflows for the x-axis (how overflow works going off the side of the
+            element), and for the y-axis (how overflow woeks going off the bottom of the element) using overflow-x and
+            overflow-y.
+        </p>
+    </div>
 </body>
 
 </html>
