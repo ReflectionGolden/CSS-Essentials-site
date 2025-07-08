@@ -61,35 +61,39 @@
             <span class="colour-name">colour name</span>. Colour can be applied to text, the background, to a border,
             or to many other things for different effects.
         </p>
-        <br>
-        <p>
-            - <span class="RGB">Red/Green/Blue</span> (or RGB) works by providing a value from 0 to 255 for the channels
-            of red green and blue, which is how light combines into various colours as those are the primary colours of
-            light (or "additive colour mixing"). This is also used by <span class="RGBA">Red/Green/Blue/Alpha</span> (or
-            RGBA) but the added channel "Alpha" is used for transparency, with a value from 0.0 (completely transparent)
-            to 1.0 (fully opaque).
-        </p>
-        <p>
-            - <span class="HEX">Hex code</span> is one of the most used ways to describe colour for computers. It is
-            seen as a # symbol followed by 6 "digits" of haxadecimal (numbers form 0-9 and letters from a-f to represent
-            numbers from 10-15, with 10 in hexadecimal being the same as 16 in decimal). Each group of 2 digits is used
-            for the same channels as RGB in order. So since the colour being used to represent hex codes in this example
-            is #3aefeb it is equivalent to an RGB value of [58,239,235] which makes it the light blue/green colour that
-            you see. Hex codes are also able to use the alpha channel by adding another 2 digits to the code, with
-            higher values being more opaque and lower values being more transparent.
-        </p>
-        <p>
-            - <span class="HSL">Hue/Saturation/Lightness</span> (HSL) and <span
-                class="HSLA">Hue/Saturation/Lightness/Alpha</span> (HSLA) are in contrast less widely used. The value
-            for Hue goes through each colour ranging from 0 to 359 (0 is the same as 360, being red, and all other
-            values are a different part of the light spectrum), and the Saturation and Lightness values range from 0% to
-            100%. HSLA is like RGBA in which it also adds in the Alpha channel, with the same value range.
-        </p>
-        <p>
-            - The web also has 140 <span class="colour-name">colour names</span> that are supported by all browsers,
-            which are symbols pointing to predefined hex code values. The colour used to represent colour names for this
-            example is magenta, which means it is the equivalent of #ff00ff.
-        </p>
+        <ul>
+            <li>
+                <span class="RGB">Red/Green/Blue</span> (or RGB) works by providing a value from 0 to 255 for the
+                channels of red green and blue, which is how light combines into various colours as those are the
+                primary colours of light (or "additive colour mixing"). This is also used by <span
+                    class="RGBA">Red/Green/Blue/Alpha</span> (or RGBA) but the added channel "Alpha" is used for
+                transparency, with a value from 0.0 (completely transparent) to 1.0 (fully opaque). The alpha channel
+                can be seen in action when Example 16.1 overlaps with another example, as you will be able to see
+                through it.
+            </li>
+            <li>
+                <span class="HEX">Hex code</span> is one of the most used ways to describe colour for computers. It is
+                seen as a # symbol followed by 6 "digits" of haxadecimal (numbers form 0-9 and letters from a-f to
+                represent numbers from 10-15, with 10 in hexadecimal being the same as 16 in decimal). Each group of 2
+                digits is used for the same channels as RGB in order. So since the colour being used to represent hex
+                codes in this example is #3aefeb it is equivalent to an RGB value of [58,239,235] which makes it the
+                light blue/green colour that you see. Hex codes are also able to use the alpha channel by adding another
+                2 digits to the code, with higher values being more opaque and lower values being more transparent.
+            </li>
+            <li>
+                <span class="HSL">Hue/Saturation/Lightness</span> (HSL) and <span
+                    class="HSLA">Hue/Saturation/Lightness/Alpha</span> (HSLA) are in contrast less widely used. The
+                value for Hue goes through each colour ranging from 0 to 359 (0 is the same as 360, being red, and all
+                other values are a different part of the light spectrum), and the Saturation and Lightness values range
+                from 0% to 100%. HSLA is like RGBA in which it also adds in the Alpha channel, with the same value
+                range.
+            </li>
+            <li>
+                The web also has 140 <span class="colour-name">colour names</span> that are supported by all browsers,
+                which are symbols pointing to predefined hex code values. The colour used to represent colour names for
+                this example is magenta, which means it is the equivalent of #ff00ff.
+            </li>
+        </ul>
     </div>
     <div class="container3">
         <h2>Example 6: background images</h2>
@@ -380,6 +384,174 @@
             but you can see it used by looking at the navigation for my <a
                 href="https://github.com/ReflectionGolden/ITOL-practical-site-one" target="_blank"
                 class="useful-link"><i class="fa-brands fa-github"></i>ITOL-practical-site-one</a> on GitHub.
+        </p>
+    </div>
+    <div class="container full-wide">
+        <h2>Example 16: Position</h2>
+        <p>
+            The position property can be used to change where different elements appear within their container. For most
+            elements that this would be used for, it would define their position within the window itself, but for this
+            example there is a box within this example's container which will contain a different element for each
+            position.
+            <br>
+            Each box contains text stating what the position value is for that box.
+        </p>
+        <ul>
+            <li>
+                The static value is the default position value, and causes elements to follow the natural flow of the
+                page so each one is shown on top of each other in the order they are in the HTML, and causes elements to
+                not be affected by the other "positioning properties" (top, bottom, left, or right). It also always
+                shows "behind" overlapped elements, even if it is placed after them in the HTML, this being because it
+                doesn't count as "positioned".
+            </li>
+            <li>
+                The relative value is the same as static, except that the element can be affected by positioning
+                properties, as can be seen with the blue box in the example area.
+            </li>
+            <li>
+                The fixed position, instead of causing the element to follow the page, uses the positioning properties
+                to show the element as fixed to the viewport, not moving when you scroll up or down. This can be seen
+                with Example 16.1, which has the transparent green background (so that you can still see what is behind
+                it) and has been in the top right of the screen instead of inside the example area.
+            </li>
+            <li>
+                The absolute position is much like Fixed, except that instead of being relative to the viewport, it is
+                positioned relative to the nearest positioned ancestor, meaning that if it is within an element which
+                has a position property other than static (which the example area has a position property of relative,
+                with no positioning properties used) it uses that element for the positioning properties. You will see
+                the yellow box is in the bottom right of the example area.
+                <br>
+                If there was no positioned ancestor, it would instead use the document body, and move with page
+                scrolling, so if the example area was static then the yellow box would be in the bottom right if the
+                page was scrolled all the way to the top.
+            </li>
+            <li>
+                The sticky position acts like the relative position, but if it is given a top positioning property then
+                when you scroll past it then it sticks to the viewport using that positioning property for the distance
+                from the top while staying within the parent container (and not moving past the bottom of it).
+            </li>
+        </ul>
+        <div class="position-container" style="position: relative;">
+            <div class="container sticky-box">
+                <h2>Example 16.2: Sticky Position</h2>
+                <p>position: sticky</p>
+            </div>
+            <div id="static-box">
+                <p>position: static</p>
+            </div>
+            <div id="relative-box">
+                <p>position: relative<br>left: 30px</p>
+            </div>
+            <div class="container fixed-box">
+                <h2>Example 16.1: Fixed Position</h2>
+                <p>position: fixed</p>
+            </div>
+            <div id="absolute-box">
+                <p>position: absolute</p>
+            </div>
+        </div>
+    </div>
+    <div class="container full-wide">
+        <h2>Example 17: Z-index</h2>
+        <p>
+            The z-index property is able to change in what order positioned elements are shown separately from the order
+            they are in the HTML. As an example, the images below were added with "image 1" first and "image 2" second,
+            but the first is shown above the second dues to being given a Z-index of 1.
+            <br><br>
+            It is possible for the z-index to go all the way up to 1000 and down to -1000, for a total of 2001 z-index
+            layers (including the default of 0). This can be made use of if there are many elements that you want to
+            position in various ways.
+            <br>
+            Also in the example area, is a venn diagram with 3 circles, each with a thin black border and a transparent
+            background of Red, Green, or Blue while on a background of white. The order they were written in the HTML is
+            the red circle, then the blue, then the green, then the white background. However, the z-index property has
+            been used to show them all in the opposite order, with the white background first, then the green, blue,
+            then red circles.
+        </p>
+        <div class="position-container" style="position: relative;">
+            <!-- The different objects. -->
+            <div id="picture1">
+                <p>image 1</p>
+            </div>
+            <div id="picture2">
+                <p>image 2</p>
+            </div>
+            <!-- Diagram Circles -->
+            <div id="circlered"></div>
+            <div id="circleblue"></div>
+            <div id="circlegreen"></div>
+            <div id="backgroundwhite"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Example 18: Display Property</h2>
+        <p>
+            The display property is the first piece of CSS that won't be given visual examples due to being mostly for
+            full pages, but this example will still give details on each form of display.
+        </p>
+        <ul>
+            <li>
+                The deafault display of an element is either block, or inline.
+            </li>
+            <li>
+                Block elements (by default) take up the full available width and any elements after them are placed
+                immediately below them, with some examples of elements that are by default "block-level" are the div,
+                the header elements (h1 to h6), p, and so on.
+            </li>
+            <li>
+                Inline, in contrast, doesn't start a new line and only takes up as much space as is required for the
+                content within it. some examples are the span and a elements, which can be used within paragraphs of
+                text to either change the CSS styling of individual words or phrases with span, or turn specific words
+                (like a company name) into a link to another page.
+            </li>
+            <li>
+                Using CSS, it is possible to change the display property, with a number of options. One option is
+                "none", which hides the element and can be used with a button and javascript to hide and show the
+                element by changing it between "display: none;" and some other display value. This can be done similarly
+                using "visibility: hidden;", however instead of it being as if the element was never there, it instead
+                just makes it invisible which means the space it would have taken up shows as blank.
+            </li>
+            <li>
+                There are also display values for various layouts such as grid, flex, and similar which can be both
+                block-level and inline-level and confer different ways that it can be displayed such as allowing or
+                disallowing different CSS properties from altering the element.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Example 19: Max Width</h2>
+        <p>
+            Max width is a property used within CSS to go with an existing width, so that smaller screens don't cut off
+            the end of the element. For most of the containers for examples on this page, the width is set to fit the
+            content out to a maximum of 50% of the window's width, meaning that they don't feel like they take up too
+            much space across the page when they have more text, but if they don't have much then they don't reach all
+            the way to that maximum.
+            <br><br>
+            I also have set a minimum width so that if a screen was big enough or an example was small enough the
+            container wouldn't appear too small.
+        </p>
+    </div>
+    <div class="container fixed-height-scroll">
+        <h2>Example 20: Overflow</h2>
+        <p>
+            The overflow property dictates how an element reacts when the text would get to the end of the available
+            space. It is by default set to "visible", which makes sure the text is visible mostly by increasing the
+            height of the element containing the text, unless a specific height is given at which point the text
+            overflows down the bottom of the element.
+            <br><br>
+            Another option is the value "hidden", which if a specific height is provided and the text overflows from the
+            container, any of the text past the size of the container won't be visible.
+            <br><br>
+            The third value, which is being used by this container, is "scroll" which does the same as hidden but adds a
+            scrollbar so that the rest of the content can be seen. There is also "auto", which does the same thing but
+            only adds the scrollbar if it is necessary in order to actually see the overflowed text. These can be used
+            for responsive text boxes if you want to keep them at a certain height (such as a percentage of the window
+            height) on smaller screens to allow the user a better visual experience, but if the text would cause it to
+            be too tall.
+            <br><br>
+            It is also possible to set different overflows for the x-axis (how overflow works going off the side of the
+            element), and for the y-axis (how overflow woeks going off the bottom of the element) using overflow-x and
+            overflow-y.
         </p>
     </div>
 </body>
