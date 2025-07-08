@@ -454,19 +454,27 @@
     <div class="container full-wide">
         <h2>Example 17: Z-index</h2>
         <p>
-            The z-index property is able to change in what order positioned elements are shown separately from the order they are in the HTML. As an example, the images below were added with "image 1" first and "image 2" second, but the first is shown above the second dues to being given a Z-index of 1.
+            The z-index property is able to change in what order positioned elements are shown separately from the order
+            they are in the HTML. As an example, the images below were added with "image 1" first and "image 2" second,
+            but the first is shown above the second dues to being given a Z-index of 1.
             <br><br>
-            It is possible for the z-index to go all the way up to 1000 and down to -1000, for a total of 2001 z-index layers (including the default of 0). This can be made use of if there are many elements that you want to position in various ways.
+            It is possible for the z-index to go all the way up to 1000 and down to -1000, for a total of 2001 z-index
+            layers (including the default of 0). This can be made use of if there are many elements that you want to
+            position in various ways.
             <br>
-            Also in the example area, is a venn diagram with 3 circles, each with a thin black border and a transparent background of Red, Green, or Blue while on a background of white. The order they were written in the HTML is the red circle, then the blue, then the green, then the white background. However, the z-index property has been used to show them all in the opposite order, with the white background first, then the green, blue, then red circles.
+            Also in the example area, is a venn diagram with 3 circles, each with a thin black border and a transparent
+            background of Red, Green, or Blue while on a background of white. The order they were written in the HTML is
+            the red circle, then the blue, then the green, then the white background. However, the z-index property has
+            been used to show them all in the opposite order, with the white background first, then the green, blue,
+            then red circles.
         </p>
         <div class="position-container" style="position: relative;">
             <!-- The different objects. -->
             <div id="picture1">
-               <p>image 1</p>
+                <p>image 1</p>
             </div>
             <div id="picture2">
-               <p>image 2</p>
+                <p>image 2</p>
             </div>
             <!-- Diagram Circles -->
             <div id="circlered"></div>
@@ -478,25 +486,50 @@
     <div class="container">
         <h2>Example 18: Display Property</h2>
         <p>
-            The display property is the first piece of CSS that won't be given visual examples due to being mostly for full pages, but this example will still give details on each form of display.
+            The display property is the first piece of CSS that won't be given visual examples due to being mostly for
+            full pages, but this example will still give details on each form of display.
         </p>
         <ul>
             <li>
                 The deafault display of an element is either block, or inline.
             </li>
             <li>
-                Block elements (by default) take up the full available width and any elements after them are placed immediately below them, with some examples of elements that are by default "block-level" are the div, the header elements (h1 to h6), p, and so on.
+                Block elements (by default) take up the full available width and any elements after them are placed
+                immediately below them, with some examples of elements that are by default "block-level" are the div,
+                the header elements (h1 to h6), p, and so on.
             </li>
             <li>
-                Inline, in contrast, doesn't start a new line and only takes up as much space as is required for the content within it. some examples are the span and a elements, which can be used within paragraphs of text to either change the CSS styling of individual words or phrases with span, or turn specific words (like a company name) into a link to another page.
+                Inline, in contrast, doesn't start a new line and only takes up as much space as is required for the
+                content within it. some examples are the span and a elements, which can be used within paragraphs of
+                text to either change the CSS styling of individual words or phrases with span, or turn specific words
+                (like a company name) into a link to another page.
             </li>
             <li>
-                Using CSS, it is possible to change the display property, with a number of options. One option is "none", which hides the element and can be used with a button and javascript to hide and show the element by changing it between "display: none;" and some other display value. This can be done similarly using "visibility: hidden;", however instead of it being as if the element was never there, it instead just makes it invisible which means the space it would have taken up shows as blank.
+                Using CSS, it is possible to change the display property, with a number of options. One option is
+                "none", which hides the element and can be used with a button and javascript to hide and show the
+                element by changing it between "display: none;" and some other display value. This can be done similarly
+                using "visibility: hidden;", however instead of it being as if the element was never there, it instead
+                just makes it invisible which means the space it would have taken up shows as blank.
             </li>
             <li>
-                There are also display values for various layouts such as grid, flex, and similar which can be both block-level and inline-level and confer different ways that it can be displayed such as allowing or disallowing different CSS properties from altering the element.
+                There are also display values for various layouts such as grid, flex, and similar which can be both
+                block-level and inline-level and confer different ways that it can be displayed such as allowing or
+                disallowing different CSS properties from altering the element.
             </li>
         </ul>
+    </div>
+    <div class="container">
+        <h2>Example 19: Max Width</h2>
+        <p>
+            Max width is a property used within CSS to go with an existing width, so that smaller screens don't cut off
+            the end of the element. For most of the containers for examples on this page, the width is set to fit the
+            content out to a maximum of 50% of the window's width, meaning that they don't feel like they take up too
+            much space across the page when they have more text, but if they don't have much then they don't reach all
+            the way to that maximum.
+            <br><br>
+            I also have set a minimum width so that if a screen was big enough or an example was small enough the
+            container wouldn't appear too small.
+        </p>
     </div>
 </body>
 
