@@ -554,16 +554,32 @@
             overflow-y.
         </p>
     </div>
-    <div class="container clear-floaty">
+    <div class="container floaty">
         <h2>Example 21: float & Clear</h2>
         <p>
             The float property is used for positioning elements. By default the float is set to none, which for most elements leaves it on the left of the container element unless it is placed in the middle of text like an image placed in a paragraph. The element can be forced to be on the left or right by specifying with float, such as this example which has the "float: right;" property assigned.
         </p>
         <p>
-            The clear property is used to place an element into its own horizontal line if it would be rendered on the same line as another element in the direction specified in the value. (for example, if an element has float left another element could be rendered on the same line, but if that other element has "clear: left;", then it will appear on a new line)
+            The clear property is used to place an element into its own horizontal line if it would be rendered on the same line as another element in the direction specified in the value. (for example, if an element has float left another element could be rendered on the same line, but if that other element has "clear: left;", then it will appear on a new line).
+            <br>
+            Example 22 has a clear set to the right in order to not overlap with this example.
         </p>
         <p>
             The float property overrides the "margin: auto;" property which is often used to center an element within the container.
+        </p>
+    </div>
+    <div class="container cleared">
+        <h2>Example 22: CSS Combinators</h2>
+        <p>
+            Combinators are CSS selsctors that point to elements that are decendants of other elements (such as an a element that is within an li element if creating navigation) so that it only applies in that situation (instead of to all a elements, and therefore all links).
+            <br>
+            This is done by putting a space between the element that is the ancestor and the one that is being given styling information.
+        </p>
+        <p>
+            There are a few extra combinators for different relations than descendant, which are child (using a >, and denotes a direct descendant meaning only if it isn't within another subcontainer made with a different element), next sibling (using +, and provides styling for an element immediately after another specific element within the same partent element), and subsequent sibling (using ~, and means all siblings of that type after a specific element in the same parent element)
+        </p>
+        <p>
+            It is also possible to specify a class or id to be for a specific type of element by placing the element type before the . or # (for class and id respectively), and this can also be combined with the combinators above to that you could make CSS styles for (for example) every paragraph within a div that has a specific class (so that paragraphs within a certain type of container all matches, but text outside of those containers or within differently styled containers doesn't have to match).
         </p>
     </div>
 </body>
