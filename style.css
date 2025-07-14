@@ -2,6 +2,10 @@
     font-family: ComicRelief-Regular;
     src: url(ComicRelief-Regular.ttf);
 }
+@font-face {
+    font-family: Rubik-Variable;
+    src: url(Rubik-VariableFont_wght.ttf);
+}
 
 /* Default styling */
 html {
@@ -73,6 +77,18 @@ div.floaty {
 
 div.cleared {
     clear: right;
+}
+
+div.last-example h2 {
+    font-family: Rubik-Variable, sans-serif;
+}
+
+div.last-example p {
+    font-family: Rubik-Variable, sans-serif;
+}
+
+div.last-example:hover {
+    background-color: rgba(255, 0, 255, 0.25);
 }
 
 /* Misc styling */

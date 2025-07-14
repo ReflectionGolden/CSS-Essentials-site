@@ -100,16 +100,18 @@
         <p>
             This example shows that it is also possible to use an image for a background in a container instead of just
             a colour.
-            <br><br>
+            <br>
             The background image is also capable of being repeated (such as for a tileable pattern you want to use for a
             given box or container) or it can be set to not do so. It is also possible to only set it to repeat either
             horizontally or vertically.
-            <br><br>
+        </p>
+        <p>
             If the background is set to not be repeated, then the rest of the backgorund will be set to look the same as
             the background behind the element being assigned an image, unless it is also given a background colour,
             which will show behind the image so a background colour would only show if the image is either transparent
             or doesn't fill the whole box similar to how this one has a sunset that doesn't fill the box.
-            <br><br>
+        </p>
+        <p>
             There is also a property for changing the size of the background, so it could make a background image match
             the size of the element it is assigned to. This is set to "contain" in this example so that the image is
             made larger so that its height matches the container while keeping the same proportions so the width doesn't
@@ -127,12 +129,13 @@
             while this one shoes the border styled as dashed while being cyan in colour. All examples also have a border
             radius which rounds the corners of the boxes, making them smoother to look at. A short hand property is also
             available to combine each border property at once (ordered as width, style, colour).
-            <br><br>
+        </p>
+        <p>
             The border width is also able to be changed, so that it can be made to stand out more or to be more subtle.
-            <br><br>
+            <br>
             Borders can also be styled to be hidden in case an element you don't want to have a border is inheriting one
             from somewhere else.
-            <br><br>
+            <br>
             Each separate side of the border is capable of being defined separately for each property (such as if you
             wanted the bottom border to be a double line)
         </p>
@@ -143,7 +146,8 @@
             Margins change the position of the element they are applied to. This example shows the margin changed so
             that the left and right margins have the value auto, which causes the container to be rendered in the center
             of the page. It also has a larger gap between it and the other examples.
-            <br><br>
+        </p>
+        <p>
             This example is done by making use of assignment of multiple classes, using the base "container" class and
             an extra "auto-margin" class.
         </p>
@@ -168,7 +172,8 @@
             <br>
             However, when viewed with a window that has a thin enough width, the text will instead overflow the
             container.
-            <br><br>
+        </p>
+        <p>
             The max width has also been changed to go up to a maximum of 75% of the window's width, which causes it to
             be longer than other examples due to still being set to fit the content.
         </p>
@@ -268,13 +273,15 @@
             surrounding text, and is bold. It is also possible to make a link change when it is different states (normal
             otherwise known as "link", visited, hovered, and active), which you can see if you do each with the second
             link.
-            <br><br>
+        </p>
+        <p>
             When the second link is hovered over, it will become lighter and get an underline the colour of the normal
             text while seeming to lift off the page due to getting a text shadow with a short transition to the new
             state. Also, while "active" (which means in the process of being clicked on) the link returns to the darker
             colour and the shadow recedes to suggest it is being clicked and held down but the bottom border stays.
             Finally, once the link has been visited it will turn a dark red when not hovered over or activated.
-            <br><br>
+        </p>
+        <p>
             In the CSS, the styles need to be done in order of "link, visited, hover, active" but they aren't all needed
             at once if you only want to change a the hover and active states, for example.
         </p>
@@ -375,10 +382,12 @@
         <p>
             It is possible to use options intended for ordered lists with unordered lists and vice versa, although it is
             better to keep them for the specific type of list they are for.
-            <br><br>
+        </p>
+        <p>
             There are also a few extra list styles, as there is "none" which removes markers before each item, and also
             a way to use images instead for a custom marker in the case of a website with a very specific theme.
-            <br><br>
+        </p>
+        <p>
             Lists are most used for containing the navigation at the top of the page, showing the links for each page so
             that the user can go between them. This site does not have muultiple pages, so there isn't an example here,
             but you can see it used by looking at the navigation for my <a
@@ -457,7 +466,8 @@
             The z-index property is able to change in what order positioned elements are shown separately from the order
             they are in the HTML. As an example, the images below were added with "image 1" first and "image 2" second,
             but the first is shown above the second dues to being given a Z-index of 1.
-            <br><br>
+        </p>
+        <p>
             It is possible for the z-index to go all the way up to 1000 and down to -1000, for a total of 2001 z-index
             layers (including the default of 0). This can be made use of if there are many elements that you want to
             position in various ways.
@@ -526,7 +536,8 @@
             content out to a maximum of 50% of the window's width, meaning that they don't feel like they take up too
             much space across the page when they have more text, but if they don't have much then they don't reach all
             the way to that maximum.
-            <br><br>
+        </p>
+        <p>
             I also have set a minimum width so that if a screen was big enough or an example was small enough the
             container wouldn't appear too small.
         </p>
@@ -538,17 +549,20 @@
             space. It is by default set to "visible", which makes sure the text is visible mostly by increasing the
             height of the element containing the text, unless a specific height is given at which point the text
             overflows down the bottom of the element.
-            <br><br>
+        </p>
+        <p>
             Another option is the value "hidden", which if a specific height is provided and the text overflows from the
             container, any of the text past the size of the container won't be visible.
-            <br><br>
+        </p>
+        <p>
             The third value, which is being used by this container, is "scroll" which does the same as hidden but adds a
             scrollbar so that the rest of the content can be seen. There is also "auto", which does the same thing but
             only adds the scrollbar if it is necessary in order to actually see the overflowed text. These can be used
             for responsive text boxes if you want to keep them at a certain height (such as a percentage of the window
             height) on smaller screens to allow the user a better visual experience, but if the text would cause it to
             be too tall.
-            <br><br>
+        </p>
+        <p>
             It is also possible to set different overflows for the x-axis (how overflow works going off the side of the
             element), and for the y-axis (how overflow woeks going off the bottom of the element) using overflow-x and
             overflow-y.
@@ -557,29 +571,62 @@
     <div class="container floaty">
         <h2>Example 21: float & Clear</h2>
         <p>
-            The float property is used for positioning elements. By default the float is set to none, which for most elements leaves it on the left of the container element unless it is placed in the middle of text like an image placed in a paragraph. The element can be forced to be on the left or right by specifying with float, such as this example which has the "float: right;" property assigned.
+            The float property is used for positioning elements. By default the float is set to none, which for most
+            elements leaves it on the left of the container element unless it is placed in the middle of text like an
+            image placed in a paragraph. The element can be forced to be on the left or right by specifying with float,
+            such as this example which has the "float: right;" property assigned.
         </p>
         <p>
-            The clear property is used to place an element into its own horizontal line if it would be rendered on the same line as another element in the direction specified in the value. (for example, if an element has float left another element could be rendered on the same line, but if that other element has "clear: left;", then it will appear on a new line).
+            The clear property is used to place an element into its own horizontal line if it would be rendered on the
+            same line as another element in the direction specified in the value. (for example, if an element has float
+            left another element could be rendered on the same line, but if that other element has "clear: left;", then
+            it will appear on a new line).
             <br>
             Example 22 has a clear set to the right in order to not overlap with this example.
         </p>
         <p>
-            The float property overrides the "margin: auto;" property which is often used to center an element within the container.
+            The float property overrides the "margin: auto;" property which is often used to center an element within
+            the container.
         </p>
     </div>
     <div class="container cleared">
         <h2>Example 22: CSS Combinators</h2>
         <p>
-            Combinators are CSS selsctors that point to elements that are decendants of other elements (such as an a element that is within an li element if creating navigation) so that it only applies in that situation (instead of to all a elements, and therefore all links).
+            Combinators are CSS selsctors that point to elements that are decendants of other elements (such as an a
+            element that is within an li element if creating navigation) so that it only applies in that situation
+            (instead of to all a elements, and therefore all links).
             <br>
-            This is done by putting a space between the element that is the ancestor and the one that is being given styling information.
+            This is done by putting a space between the element that is the ancestor and the one that is being given
+            styling information.
         </p>
         <p>
-            There are a few extra combinators for different relations than descendant, which are child (using a >, and denotes a direct descendant meaning only if it isn't within another subcontainer made with a different element), next sibling (using +, and provides styling for an element immediately after another specific element within the same partent element), and subsequent sibling (using ~, and means all siblings of that type after a specific element in the same parent element)
+            There are a few extra combinators for different relations than descendant, which are child (using a >, and
+            denotes a direct descendant meaning only if it isn't within another subcontainer made with a different
+            element), next sibling (using +, and provides styling for an element immediately after another specific
+            element within the same partent element), and subsequent sibling (using ~, and means all siblings of that
+            type after a specific element in the same parent element)
         </p>
         <p>
-            It is also possible to specify a class or id to be for a specific type of element by placing the element type before the . or # (for class and id respectively), and this can also be combined with the combinators above to that you could make CSS styles for (for example) every paragraph within a div that has a specific class (so that paragraphs within a certain type of container all matches, but text outside of those containers or within differently styled containers doesn't have to match).
+            It is also possible to specify a class or id to be for a specific type of element by placing the element
+            type before the . or # (for class and id respectively), and this can also be combined with the combinators
+            above to that you could make CSS styles for (for example) every paragraph within a div that has a specific
+            class (so that paragraphs within a certain type of container all matches, but text outside of those
+            containers or within differently styled containers doesn't have to match).
+        </p>
+    </div>
+    <div class="container last-example">
+        <h2>Example 23: Pseudo-classes</h2>
+        <p>
+            a pseudo-class defines what CSS needs to be applied when an element has a specific state. One well known one
+            is ":hover" which provides the CSS which should be applied when an element with the relevant pseudo-class is
+            hovered over (either given directly to all elements of a certain type, or given to all elements with a
+            certain class). This example has the hover pseudo-class set to make the background colour into a mostly
+            transparent magenta when hovered over but the normal colour when not.
+        </p>
+        <p>
+            Pseudo-classes are most often used for links, so you know it is a link because it changes when you hover
+            over it, when you click it the css changes again, and it has a different style (often in a different colour)
+            if the link has been visited.
         </p>
     </div>
 </body>
